@@ -1,4 +1,7 @@
-<h1>Notepad (new)</h1> <br>
+<h1>[Notesapp] Main Page</h1>
+<p>[Notesapp] is a web app that allows you to save notes online, without requiring an account.</p>
+<p>This app is not intended to be used for confidential information, anybody who knows the unique key for your notepad will be able to view and edit it freely.</p>
+<p>Try to pick an identifier only you would think of!</p>
 
 <%= form_for @notepad do |f| %>
   <p>
