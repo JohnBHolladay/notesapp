@@ -1,0 +1,12 @@
+<h1>Notepad (new)</h1> <br>
+
+<%= form_for @notepad do |f| %>
+  <p>
+    <%= f.label "Enter the Notepad Identifier:" %><br>
+    <%= f.text_field :url, :value => @notepad.url%>
+  </p>
+
+  <p>
+    <%= f.submit "Go"%>
+  </p>
+<% end %>

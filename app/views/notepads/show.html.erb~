@@ -1,0 +1,4 @@
+<h1>Notepad (show)</h1> <br>
+<p>
+  <%= @notepad.url %>
+</p>
