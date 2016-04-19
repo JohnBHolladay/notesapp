@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160402202827) do
+ActiveRecord::Schema.define(version: 20160415093232) do
 
   create_table "notepads", force: :cascade do |t|
     t.string   "url"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20160402202827) do
 
   create_table "notes", force: :cascade do |t|
     t.text     "text"
+    t.integer  "notepad_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

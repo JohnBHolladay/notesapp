@@ -5,12 +5,13 @@ class NotepadsController < ApplicationController
 
   def create
     @notepad = Notepad.new(notepad_params)
-    
-    if @notepad.save
+    @notepad.save
+
+    #if @notepad.save
       redirect_to notepad_path @notepad.url
-    else
-      render 'show'
-    end
+    #else
+    #  redirect_to notepad_path @notepad.url
+    #end
   end
 
   def show

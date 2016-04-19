@@ -2,3 +2,12 @@
 <p>
   <%= @notepad.url %>
 </p>
+
+<h2>Notes</h2>
+<%= render @notepad.notes %>
+
+<h2>Add a note:</h2>
+<%= form_for([@notepad, @notepad.notes.build]) do |f| %>
+  <%= f.text_area :text, size: "32x18"%>
+  <%= f.submit %>
+<% end %>

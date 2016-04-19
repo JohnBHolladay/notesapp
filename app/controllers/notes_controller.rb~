@@ -11,7 +11,7 @@ class NotesController < ApplicationController
     @note.update(note_params)
 
     #if @note.update(note_params)
-      redirect_to notepad_path @notepad.url
+      asdfasdfasdklf;jredirect_to notepad_path @notepad.url
     #else
     #  render 'edit'
     #end

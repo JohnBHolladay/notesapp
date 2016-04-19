@@ -2,6 +2,8 @@
 
 one:
   text: MyText
+  notepad_id: 1
 
 two:
   text: MyText
+  notepad_id: 1
