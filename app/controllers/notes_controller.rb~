@@ -5,17 +5,13 @@ class NotesController < ApplicationController
     redirect_to notepad_path @notepad.url
   end
 
-  def update
-    @notepad = Notepad.find(params[:notepad_id])
-    @note = @notepad.notes.find(params[:id])
-    @note.update(note_params)
+  #def update
+  #  @notepad = Notepad.find(params[:notepad_id])
+  #  @note = @notepad.notes.find(params[:id])
+  #  @note.update(note_params)
 
-    #if @note.update(note_params)
-      asdfasdfasdklf;jredirect_to notepad_path @notepad.url
-    #else
-    #  render 'edit'
-    #end
-  end
+    #redirect_to notepad_path @notepad.url
+  #end
 
   def destroy
     @notepad = Notepad.find(params[:notepad_id])

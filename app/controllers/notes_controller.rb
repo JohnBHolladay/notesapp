@@ -10,11 +10,7 @@ class NotesController < ApplicationController
     @note = @notepad.notes.find(params[:id])
     @note.update(note_params)
 
-    #if @note.update(note_params)
-      redirect_to notepad_path @notepad.url
-    #else
-    #  render 'edit'
-    #end
+    redirect_to notepad_path @notepad.url
   end
 
   def destroy
