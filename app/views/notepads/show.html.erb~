@@ -7,17 +7,19 @@
 
 <div id="centerNotes">
   <%= render @notepad.notes %>
-
-  <div class="noteFull">
-    <%= form_for([@notepad, @notepad.notes.build]) do |f| %>
-      <p>
-        <%= f.text_area :text, size: "32x20", class: "noteText", placeholder: "Write a new note here."%>
-      </p>
-      <p>
-        <%= f.submit "Create", class: "noteUpdateBtn"%>
-      </p>
-    <% end %>
-  </div>
+ 
+  <% if @notepad.notes.count < 8 %>
+    <div class="noteFull">
+      <%= form_for([@notepad, @notepad.notes.build]) do |f| %>
+        <p>
+          <%= f.text_area :text, size: "32x20", class: "noteText", placeholder: "Write a new note here."%>
+        </p>
+        <p>
+          <%= f.submit "Create", class: "noteUpdateBtn"%>
+        </p>
+      <% end %>
+    </div>
+  <% end %>
 </div>
 
 <footer>
