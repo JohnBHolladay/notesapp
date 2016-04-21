@@ -22,7 +22,6 @@
 #center {
   position: relative;
   margin: 0 auto;
-  padding-top: 2em;
   width: 70%;
   height: 1080px;
 }

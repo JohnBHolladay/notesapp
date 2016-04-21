@@ -1,7 +1,2 @@
-<h1>Notesapp</h1>
+<h1>QWNotes</h1>
 <p>Welcome! Enter a name for your notepad below. If it doesn't exist yet, it will be automatically created. If it does exist, you will be directed to your notepad.</p>
-
-<%= form_tag notepads_path, method: :get do %>
-  <%= text_field_tag :url %>
-  <%= submit_tag "Go" %>
-<% end %>
