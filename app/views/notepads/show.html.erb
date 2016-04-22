@@ -12,7 +12,7 @@
     <div class="noteFull">
       <%= form_for([@notepad, @notepad.notes.build]) do |f| %>
         <p>
-          <%= f.text_area :text, size: "32x20", class: "noteText", placeholder: "Write a new note here."%>
+          <%= f.text_area :text, size: "40x23", class: "noteText", placeholder: "Write a new note here."%>
         </p>
         <p>
           <%= f.submit "Create", class: "noteUpdateBtn"%>
