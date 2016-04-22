@@ -1,7 +1,13 @@
 class NotepadsController < ApplicationController
   def new
     #Generate a random url identifier. Later, this should create a more human friendly result. 
-    @notepad = Notepad.new({url: SecureRandom.uuid.upcase!})
+    orig_url = ""
+    
+    File.open(Rails.root.join("lib", "files", "idlists.csv").to_s, "r").each_line do |line|
+      orig_url = "#{orig_url}#{line.split(",").sample}"
+    end
+    
+    @notepad = Notepad.new({url: orig_url.upcase!})
   end
 
   def create
