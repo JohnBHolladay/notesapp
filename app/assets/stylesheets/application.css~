@@ -29,8 +29,11 @@
   width: 70%;
 }
 
-header, footer {
+.push, footer, header{
   height: 2em;
+}
+
+header, footer {
   padding: .5em;
   background-color: #AFAFAE;  
   vertical-align: middle;

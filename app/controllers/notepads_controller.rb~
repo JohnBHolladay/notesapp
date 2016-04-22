@@ -19,7 +19,7 @@ class NotepadsController < ApplicationController
   end
 
   def show
-    #Find the notepad by url, rather than ID. 
+    #Find the notepad by the url identifier, rather than ID. 
     @notepad = Notepad.find_by(url: params[:id])
   end
 
