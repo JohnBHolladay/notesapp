@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  background-color: #EEEEE;
+  background-color: #f2f2f2;
 }
 
 .noteFull {

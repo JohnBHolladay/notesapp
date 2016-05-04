@@ -23,15 +23,9 @@
   padding:j 0;
 }
 
-body {
-  background-image: url(asset-path('notesapp_bg.png'));
-  background-repeat: repeat;
-}
-
 .wrap {
   position: relative;
-  margin-left: 16em;
-  /*margin: 0 auto; Causes the header text to be slightly different on some pages.*/
+  margin: 0 auto; 
   width: 70%;
 }
 
