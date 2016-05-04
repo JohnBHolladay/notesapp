@@ -55,11 +55,3 @@ header h1 {
 header p {
   padding: .5em;
 }
-
-#center {
-  position: relative;
-  margin: 0 auto;
-  padding-top: 2em;
-  width: 70%;
-  height: 60em;
-}
