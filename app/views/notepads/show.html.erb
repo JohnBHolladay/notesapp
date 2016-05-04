@@ -8,7 +8,7 @@
 <div id="centerNotes">
   <%= render @notepad.notes %>
  
-  <% if @notepad.notes.count < 16 %>
+  <% if @notepad.notes.count < 32 %>
     <div class="noteFull" id="newNote">
       <%= form_for([@notepad, @notepad.notes.build]) do |f| %>
         <p>

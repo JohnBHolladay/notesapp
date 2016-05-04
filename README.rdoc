@@ -1,3 +1,3 @@
 == README
 
-This is a sample project, and not intended for wide-scale or commercial use. The app has been deployed and can be viewed online at qwnotes.herokuapp.com. 
+This is a sample project, and not intended for wide-scale or commercial use. The app has been deployed and can be viewed online at generic-webnotes.herokuapp.com. 
