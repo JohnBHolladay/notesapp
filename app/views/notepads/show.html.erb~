@@ -1,21 +1,21 @@
 <header>
-    <div class="wrap">
-      <h1><%= link_to "QWNotes", root_path %> - <%= @notepad.url %></h1>
-      <p></p>
-    </div>
+  <div class="wrap">
+    <h1><%= link_to "QWNotes", root_path %> - <%= @notepad.url %></h1>
+  </div>
 </header>
+<div class="headerLine"></div>
 
 <div id="centerNotes">
   <%= render @notepad.notes %>
  
   <% if @notepad.notes.count < 16 %>
-    <div class="noteFull">
+    <div class="noteFull" id="newNote">
       <%= form_for([@notepad, @notepad.notes.build]) do |f| %>
         <p>
-          <%= f.text_area :text, size: "40x24", class: "noteText", placeholder: "Write a new note here."%>
+          <%= f.text_area :text, size: "40x23", class: "noteText", placeholder: "Write a new note here."%>
         </p>
         <p>
-          <%= f.submit "Create", class: "noteUpdateBtn"%>
+          <%= f.submit "New Note", class: "noteUpdateBtn"%>
         </p>
       <% end %>
     </div>

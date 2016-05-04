@@ -23,21 +23,29 @@
   padding:j 0;
 }
 
+body {
+  background-image: url(asset-path('notesapp_bg.png'));
+  background-repeat: repeat;
+}
+
 .wrap {
   position: relative;
-  margin: 0 auto;
+  margin-left: 16em;
+  /*margin: 0 auto; Causes the header text to be slightly different on some pages.*/
   width: 70%;
 }
 
-.push, footer, header{
+header, footer {
   height: 2em;
+  padding: .5em;
+  vertical-align: middle;
+  background: white;
 }
 
-header, footer {
-  padding: .5em;
-  background-color: #AFAFAE;  
-  vertical-align: middle;
-  overflow: hidden;
+.headerLine {
+  height: .2em;
+  width: 100%;
+  background-color: #FFE968;     
 }
 
 header a, a:visited {
@@ -52,4 +60,12 @@ header h1 {
 
 header p {
   padding: .5em;
+}
+
+#center {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 2em;
+  width: 60%;
+  height: 60em;
 }
